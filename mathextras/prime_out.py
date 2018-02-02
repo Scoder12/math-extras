@@ -37,7 +37,7 @@ def prime_out(num):
             print("Elapsed time: %.1f [sec]" % ((t1_stop-t1_start)))
             print("or %.1f [min]" % ((t1_stop-t1_start)/60))
             print("CPU process time: %.1f [sec]" % ((t2_stop-t2_start)))
-            print("or %.1f [min]" % ((t1_stop-t1_start)/60)))
+            print("or %.1f [min]" % ((t1_stop-t1_start)/60))
             print("--------------------------------------------------") 
             return
             count = 1
@@ -50,7 +50,7 @@ def prime_out(num):
     print("Elapsed time: %.1f [sec]" % ((t1_stop-t1_start)))
     print("or %.1f [min]" % ((t1_stop-t1_start)/60))
     print("CPU process time: %.1f [sec]" % ((t2_stop-t2_start)))
-    print("or %.1f [min]" % ((t1_stop-t1_start)/60)))
+    print("or %.1f [min]" % ((t1_stop-t1_start)/60))
     print("--------------------------------------------------") 
 
     return
