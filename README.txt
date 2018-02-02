@@ -1,7 +1,7 @@
 mathextras
 
 A package with useful math functions.  
-Athors:
+Authors:
 @Scoder12
 @Poipt
 
