@@ -6,6 +6,8 @@ Author: @Scoder12
 
 Available under the MIT license.  
 """
+import time
+
 def prime_out(num):
     """prime_out(num)
     User-friendly version of prime().
