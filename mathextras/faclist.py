@@ -12,4 +12,4 @@ def getfac(num):
         if num % x == 0 and not num % x in output:
             # Tests if x goes into num and if x is already in output
             output.append(x)
-return output
+    return output
