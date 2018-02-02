@@ -104,6 +104,12 @@ def prime_out(num):
     print("--------------------------------------------------") 
 
     return
+
+def mean(nums):
+  output = 0
+  for x in range(len(nums)):
+    output += nums[x]
+  return output / len(nums)
     
 if __name__ == "__main__":
     print("prime.py")
