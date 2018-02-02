@@ -111,20 +111,3 @@ def mean(nums):
     output += nums[x]
   return output / len(nums)
     
-if __name__ == "__main__":
-    print("prime.py")
-    print("\tA prime number detector.  ")
-    print("\tWARNING: Large numbers may cause significant CPU load. ")
-    def ask():
-        numberstr = input("Number: ")
-        number = int(numberstr)
-        prime_out(number)
-        print("\n")
-        ask()
-        return
-    ask()
-        
-
-    
-
-
