@@ -157,6 +157,17 @@ def bubbleSort(alist):
                 alist[i+1] = temp
     return alist
 
-
+def median(listin):
+	bubbleSort(listin)
+	listo = 0
+	length = len(listin)
+	for x in range(int(length / 2) - 1):
+		del listin[0]
+		del listin[-1]
+	if len(listin) == 2:
+		listo = (int(listin[0] + listin[1]) / 2)
+	else:
+		listo = listin[1]
+	return listo
 
 
