@@ -125,33 +125,37 @@ def mode(nums):
 
 
 def mean(nums):
-  output = 0
-  for x in range(len(nums)):
-    output += nums[x]
-  return output / len(nums)
+    output = 0
+    for x in range(len(nums)):
+        output += nums[x]
+    return output / len(nums)
     
 
- def mode(inlist):
-    print("sorting")
+def mode(inlist):
     bubbleSort(inlist)
-    print("calculating")
     streak = 1
     array = 1
     longest = 0
-    while array < len(inlist):
+    while array < len(inlist) - 1:
         print("trying value ", inlist[array])
         if inlist[array] == inlist[array + 1]:
             streak = streak + 1
-            print("On streak! streak is ", streak)
         else:
             if streak > longest:
                 longest = streak
-                print("new high streak: ", longest)
-                mode = inlist[array]
-                print("mode is now ", mode)
+                modeo = inlist[array]
                 streak = 1
         array = array + 1
-    return mode
+    return modeo
+    
+def bubbleSort(alist):
+    for passnum in range(len(alist)-1,0,-1):
+        for i in range(passnum):
+            if alist[i]>alist[i+1]:
+                temp = alist[i]
+                alist[i] = alist[i+1]
+                alist[i+1] = temp
+    return alist
 
 
 
