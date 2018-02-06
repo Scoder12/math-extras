@@ -130,3 +130,29 @@ def mean(nums):
     output += nums[x]
   return output / len(nums)
     
+
+ def mode(inlist):
+    print("sorting")
+    bubbleSort(inlist)
+    print("calculating")
+    streak = 1
+    array = 1
+    longest = 0
+    while array < len(inlist):
+        print("trying value ", inlist[array])
+        if inlist[array] == inlist[array + 1]:
+            streak = streak + 1
+            print("On streak! streak is ", streak)
+        else:
+            if streak > longest:
+                longest = streak
+                print("new high streak: ", longest)
+                mode = inlist[array]
+                print("mode is now ", mode)
+                streak = 1
+        array = array + 1
+    return mode
+
+
+
+
