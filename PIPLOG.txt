@@ -1,0 +1,5 @@
+Version 1.0:
+  Initial deploy on pip
+  
+--TODO--
+Re-deploy with new functions
