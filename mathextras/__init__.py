@@ -169,5 +169,3 @@ def median(listin):
 	else:
 		listo = listin[1]
 	return listo
-
-
