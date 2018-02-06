@@ -169,3 +169,20 @@ def median(listin):
 	else:
 		listo = listin[1]
 	return listo
+
+def gcf(nums1, nums2):
+	nums1 = fac(nums1)
+	nums2 = fac(nums2)
+	both = []
+	if len(nums1) > len(nums2):
+		loop = len(nums1)
+		loopls = nums1
+		loopo = nums2
+	else:
+		loop = len(nums2)
+		loopls = nums2
+		loopo = nums1
+	for x in range(loop - 1):
+		if loopls[x] in loopo:
+			both.append(loopls[x])
+	return both[-1]
