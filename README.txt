@@ -72,8 +72,6 @@ mathextras.gcf(num1, num2)
 	Example:
 	>>> mathextras.gcf([6, 12])
 	6
-	
 
-
-Please make sure to report any bugs you may find.
+Please make sure to report any bugs you may find either in the issues section of GitHub, or to pymathextras@gmail.com.
 Thanks for using mathextras. It means a lot to us! <3 =)
