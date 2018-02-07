@@ -126,13 +126,11 @@ def mode(inlist):
     longest = 1
     modeo = "nan"
     while array < len(inlist) - 1:
-        print("trying value ", inlist[array])
         if inlist[array] == inlist[array + 1]:
             streak = streak + 1
         else:
             if streak > longest:
                 longest = streak
-                print("New high streak of ", longest, " ", inlist[array], "'s!")
                 modeo = inlist[array]
                 streak = 1
         array = array + 1
