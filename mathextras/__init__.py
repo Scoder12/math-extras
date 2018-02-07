@@ -1,7 +1,14 @@
 """__init__.py
 Calls other files in the package.
 """
-
+def bubbleSort(alist):
+    for passnum in range(len(alist)-1,0,-1):
+        for i in range(passnum):
+            if alist[i]>alist[i+1]:
+                temp = alist[i]
+                alist[i] = alist[i+1]
+                alist[i+1] = temp
+    return alist
 
 def fac(num):
     # Gets list of factors of variable num
@@ -117,7 +124,7 @@ def mode(inlist):
     streak = 1
     array = 1
     longest = 1
-    modeo = "no mode"
+    modeo = "nan"
     while array < len(inlist) - 1:
         print("trying value ", inlist[array])
         if inlist[array] == inlist[array + 1]:
@@ -129,18 +136,9 @@ def mode(inlist):
                 modeo = inlist[array]
                 streak = 1
         array = array + 1
-    if modeo == "no mode":
+    if modeo == "nan":
         modeo = 0
     return modeo
-
-def bubbleSort(alist):
-    for passnum in range(len(alist)-1,0,-1):
-        for i in range(passnum):
-            if alist[i]>alist[i+1]:
-                temp = alist[i]
-                alist[i] = alist[i+1]
-                alist[i+1] = temp
-    return alist
 
 def median(listin):
 	bubbleSort(listin)
