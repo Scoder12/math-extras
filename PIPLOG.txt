@@ -1,5 +1,8 @@
 Version 1.0:
   Initial deploy on pip
   
+Version 2.0:
+  Deploy with new functions like gcf(), fac(), and median()
+
 --TODO--
-Re-deploy with new functions
+None!
