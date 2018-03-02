@@ -2,7 +2,8 @@
 Calls other files in the package.
 """
 
-pi = (22 / 7)
+def pi():
+	return 22 / 7
 
 def bubbleSort(alist):
     for passnum in range(len(alist)-1,0,-1):
