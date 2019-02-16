@@ -6,22 +6,6 @@ Contains all functions and data for the package.
 # π symbol (just because)
 PI_SYMBOL = "π"
 
-def bubbleSort(inlist):
-	"""BubbleSort: Returns the array specified sorted  
-	Args:
-		ainlist (array): inlist to be sorted
-	Returns:
-		array: inlist sorted from greatest to least
-	Code credit: interactivepython.org
-	"""
-	for passnum in range(len(inlist)-1,0,-1):
-		for i in range(passnum):
-			if inlist[i]>inlist[i+1]:
-				temp = inlist[i]
-				inlist[i] = inlist[i+1]
-				inlist[i+1] = temp
-	return inlist
-
 def fac(num):
     """fac: Returns an array of factors for the given number
     Args: 
@@ -163,7 +147,7 @@ def mode(inlist):
 		Int: the mode of the numbers given
 		None if there is no clear mode
 	"""
-	bubbleSort(inlist)
+	inlist = sorted(inlist)
 	streak = 1
 	array = 1
 	longest = 1
@@ -188,7 +172,7 @@ def median(inlistin):
 	Returns:
 		Float: the median of the numbers given
 	"""
-	bubbleSort(inlistin)
+	inlistin = sorted(inlistin)
 	inlisto = 0
 	length = len(inlistin)
 	for x in range(int(length / 2) - 1):
